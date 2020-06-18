@@ -29,6 +29,8 @@
         window.netlifyIdentity.on("login", () => {
           document.location.href = "/members/";
         });
+        netlifyIdentity.close();
+
       }
     });
   }
