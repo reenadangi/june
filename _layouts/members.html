@@ -13,10 +13,14 @@
 
 <script>
   (function() {
-      
+      Console.log("bla bla");
      if (window.netlifyIdentity) {
+         
+      Console.log("true");
      window.netlifyIdentity.on("init", user => {
       if (!user) {
+          
+      Console.log("amazing");
         window.netlifyIdentity.on("login", () => {
           document.location.href = "/members/";
         });
