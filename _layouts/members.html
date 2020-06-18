@@ -21,16 +21,14 @@
       if (!user) {
           
       console.log("amazing");
-      netlifyIdentity.open();
+      // Open the modal
+        netlifyIdentity.open();
 
-    // Get the current user:
+        // Get the current user:
         const user = netlifyIdentity.currentUser();
-        console.log(user);
         window.netlifyIdentity.on("login", () => {
           document.location.href = "/members/";
-           
         });
-
       }
     });
   }
