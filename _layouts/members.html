@@ -1,39 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Members</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-</head>
-<body>
-    <h1>Welcome user!</h1>
-  
-
-<script>
-  (function() {
-      console.log("bla bla");
-     if (window.netlifyIdentity) {
-         
-      console.log("true");
-     window.netlifyIdentity.on("init", user => {
-      if (!user) {
-          
-      console.log("amazing");
-      // Open the modal
-        netlifyIdentity.open();
-
-        // Get the current user:
-        const user = netlifyIdentity.currentUser();
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/members/";
-        });
-      }
-    });
-  }
-
-  })();
-</script>
-</body>
+<html>
+  <head>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <div data-netlify-identity-menu></div>
+    <div data-netlify-identity-button>Sign up / Log in</div>
+  </body>
 </html>
