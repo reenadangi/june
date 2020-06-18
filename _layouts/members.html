@@ -21,6 +21,11 @@
       if (!user) {
           
       console.log("amazing");
+      netlifyIdentity.open();
+
+    // Get the current user:
+        const user = netlifyIdentity.currentUser();
+
         window.netlifyIdentity.on("login", () => {
           document.location.href = "/members/";
         });
