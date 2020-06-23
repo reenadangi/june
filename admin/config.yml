@@ -10,11 +10,8 @@ collections:
         - { name: Title }
     - name: "website-settings"
       label: "website settings"
-      files:
-        - label: "website settings"
-          name: "site"
-          file: "_date/site.yml"
-          fields: 
-              - label: "Heading"
-                name: "heading"
-                width: "string"
+      file: "_data/site.yml"
+      fields:
+        - { label: heading, name: heading, widget: string }
+
+
