@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    
+    {% include head.html %}
+    
+
+    <body>
+        <!--navBar -->
+        {% include navbar.html %}
+        <!-- navBar -->
+        <div class="container-fluid" style="margin-top:80px">
+        <h1>{{site.data.site.heading}}</h1>
+            {{ content }}
+        </div>  
+        <!-- footer -->
+        {% include footer.html %}
+        <!-- footer -->
+        
+        <!-- scripts -->
+        {% include scripts.html %}
+        <!-- scripts -->
+    
+    </body>
+
+</html>
