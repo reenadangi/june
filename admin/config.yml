@@ -10,8 +10,11 @@ collections:
         - { name: Title }
     - name: "website-settings"
       label: "website settings"
-      file: "_data/site.yml"
-      fields:
-        - { label: heading, name: heading, widget: string }
+      files:
+        - label: "Business Info"
+          name: "info"
+          file: "_data/site.yml"
+          fields:
+            - { label: heading, name: heading, widget: string }
 
 
